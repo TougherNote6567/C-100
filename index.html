@@ -1,0 +1,53 @@
+<html>
+    <head>
+       <title>My Selfie App</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="style.css" rel="stylesheet">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+</head>
+ 
+<body>
+    <a href="" id="link_1.0" download="Selfie.jpg"></a>
+    <div class="container">
+        <center>
+            <h1>Voice-Activated High Intensity Selfie App (VAHISA) <sup>
+                <img src="Selfie.jpg" id="logo_img">
+            </sup></h1>
+                <h4 style="color:lightgreen;
+                           font-weight :bold;">Please press allow when a pop asks you to give permission for use of your microphone.</h4>
+            <div class="form-group">
+                <br>
+                <h3 style="color:darkslateblue;">After clicking the Start button, say "Take my Selfie" to activate your webcam.</h3>
+                <label>Your voice output</label>
+                <br>
+                <textarea class="form-control" readonly="true" id="textBox"></textarea>
+            </div>
+            
+            <button class="btn btn-warning" onclick="begin()" style="border-radius :100%;">Start</button>
+            <br>
+            <br>
+            <br>
+            <br>
+            <label>Your Webcam : </label>
+            <div id="cam">
+                
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="result">
+                
+            </div>
+        </center>
+        
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
